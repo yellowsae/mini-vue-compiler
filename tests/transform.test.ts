@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { baseParse } from "../src/compiler";
+import { baseParse } from "../src/parse";
 import { transform } from "../src/transform";
 import { NodeTypes } from "../src/ast";
 

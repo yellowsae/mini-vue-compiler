@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { baseParse } from "../src/compiler";
+import { baseParse } from "../src/parse";
 import { NodeTypes } from "../src/ast";
 describe("compiler", () => {
   it('test', () => {

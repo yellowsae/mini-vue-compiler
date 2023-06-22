@@ -39,7 +39,7 @@ function traverseNode(node: any, context: any) {
   const nodeTransforms = context.nodeTransforms
 
   nodeTransforms.forEach((plugin: any) => {
-    plugin(node)
+    plugin(node)  // 执行 plugin 把对应 node 传出去 
   })
 
   // 重构 抽离 处理 深度优先遍历的 children 逻辑 
