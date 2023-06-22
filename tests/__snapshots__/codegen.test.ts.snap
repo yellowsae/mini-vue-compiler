@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Codegen > interpolation 1`] = `
+"return function render (_ctx, _cache) { 
+return '[object Object]'}"
+`;
+
+exports[`Codegen > string 1`] = `
+"return function render (_ctx, _cache) { 
+return 'hi'}"
+`;

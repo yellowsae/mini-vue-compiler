@@ -17,8 +17,14 @@ export function transform(ast: any, options: any) {
 
   // 1. 深度优先遍历 
   traverseNode(ast, context)
+
+  // 定义一个函数保存 ast
+  createRootCodegen(ast)
 }
 
+function createRootCodegen(ast: any) {
+  ast.codegenNode = ast.children[0]
+}
 
 function createTransformContext(ast: any, options: any) {
   return {
